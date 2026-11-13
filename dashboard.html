@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DropShip Pro – Dashboard</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container" style="max-width: 900px;">
+    <div class="dashboard-header">
+      <h1>📦 Dashboard</h1>
+      <span id="user-email" style="color:#94a3b8;font-size:.85rem;"></span>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="value">12</div>
+        <div class="label">Active Products</div>
+      </div>
+      <div class="stat-card">
+        <div class="value">$0.00</div>
+        <div class="label">Revenue</div>
+      </div>
+      <div class="stat-card">
+        <div class="value">0</div>
+        <div class="label">Orders</div>
+      </div>
+      <div class="stat-card">
+        <div class="value">✅</div>
+        <div class="label">Account Active</div>
+      </div>
+    </div>
+
+    <h2 style="margin-bottom:1rem;">Trending products to dropship</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <h3>Wireless Earbuds</h3>
+        <p class="price">$19.99</p>
+        <p class="desc">High‑margin tech accessory</p>
+      </div>
+      <div class="product-card">
+        <h3>LED Strip Lights</h3>
+        <p class="price">$14.99</p>
+        <p class="desc">Viral home‑decor item</p>
+      </div>
+      <div class="product-card">
+        <h3>Posture Corrector</h3>
+        <p class="price">$22.50</p>
+        <p class="desc">Health & wellness niche</p>
+      </div>
+      <div class="product-card">
+        <h3>Phone Tripod</h3>
+        <p class="price">$12.99</p>
+        <p class="desc">Creator‑economy staple</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Show user email from query string
+    const params = new URLSearchParams(window.location.search);
+    const email = params.get('email');
+    if (email) {
+      document.getElementById('user-email').textContent = email;
+    } else {
+      window.location.href = '/?error=payment_required';
+    }
+  </script>
+</body>
+</html>
