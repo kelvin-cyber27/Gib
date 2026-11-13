@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DropShip Pro – Join</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🚀 DropShip Pro</h1>
+      <p class="tagline">Start your dropshipping business today</p>
+    </header>
+
+    <section id="signup-section" class="card">
+      <h2>Create your account</h2>
+      <p class="price-badge">$2 <span>one‑time signup fee</span></p>
+      <p class="mpesa-note">
+        You will receive an <strong>M‑Pesa prompt</strong> on your phone.
+        Enter your PIN to activate your account.
+      </p>
+
+      <form id="signup-form">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">M‑Pesa phone number</label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="0712 345 678"
+            required
+          />
+        </div>
+        <button type="submit" id="pay-btn">Pay $2 &amp; Activate</button>
+      </form>
+
+      <div id="status-message" class="status hidden"></div>
+    </section>
+
+    <footer>
+      <p>Powered by Safaricom M‑Pesa · Secure STK Push</p>
+    </footer>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
