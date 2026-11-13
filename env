@@ -1,0 +1,13 @@
+# ––– Daraja credentials –––
+CONSUMER_KEY=your_consumer_key
+CONSUMER_SECRET=your_consumer_secret
+BUSINESS_SHORT_CODE=174379          # sandbox default; replace with live shortcode
+PASSKEY=bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919
+CALLBACK_URL=https://your-domain.com/api/mpesa/callback
+
+# ––– Environment –––
+DARAJA_ENV=sandbox                  # 'sandbox' or 'production'
+PORT=3000
+
+# ––– Signup fee –––
+USD_TO_KES=130                      # 1 USD ≈ 130 KES (adjust to live rate)
