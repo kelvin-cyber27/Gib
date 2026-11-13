@@ -1,0 +1,15 @@
+{
+  "name": "dropshipping-mpesa",
+  "version": "1.0.0",
+  "description": "Dropshipping site with M-Pesa STK Push signup fee",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5"
+  }
+}
